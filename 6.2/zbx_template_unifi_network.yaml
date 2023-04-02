@@ -194,7 +194,7 @@ zabbix_export:
           triggers:
             -
               uuid: 619191afb5a64f93ab918c9bf8522164
-              expression: 'last(/Unifi Network/unifi.gw_name,#1:now-24h)<>last(/Unifi Network/unifi.gw_name,#1)=0'
+              expression: 'last(/Unifi Network/unifi.gw_name,#1:now-24h)<>last(/Unifi Network/unifi.gw_name,#1)=1'
               name: 'Hostname Changed'
               priority: WARNING
         -
@@ -2500,7 +2500,7 @@ zabbix_export:
           triggers:
             -
               uuid: 75ae4f27fb954d1e86fbc4447438f0d8
-              expression: 'last(/Unifi UAP/unifi.uap.inform.url,#1:now-24h)<>last(/Unifi UAP/unifi.uap.inform.url,#1)=0'
+              expression: 'last(/Unifi UAP/unifi.uap.inform.url,#1:now-24h)<>last(/Unifi UAP/unifi.uap.inform.url,#1)=1'
               name: 'Inform Url Changed'
               priority: WARNING
         -
@@ -2662,7 +2662,7 @@ zabbix_export:
           triggers:
             -
               uuid: bb281e592293409ca1b06183f56f5021
-              expression: 'last(/Unifi UAP/unifi.uap.network,#1:now-24h)<>last(/Unifi UAP/unifi.uap.network,#1)=0'
+              expression: 'last(/Unifi UAP/unifi.uap.network,#1:now-24h)<>last(/Unifi UAP/unifi.uap.network,#1)=1'
               name: 'Management Network Changed'
               priority: WARNING
         -
@@ -2879,7 +2879,7 @@ zabbix_export:
           triggers:
             -
               uuid: 654272398a95497881e1715321e03c1f
-              expression: 'last(/Unifi UAP/unifi.uap.version,#1:now-24h)<>last(/Unifi UAP/unifi.uap.version,#1)=0'
+              expression: 'last(/Unifi UAP/unifi.uap.version,#1:now-24h)<>last(/Unifi UAP/unifi.uap.version,#1)=1'
               name: 'Software Version Changed'
               priority: INFO
       discovery_rules:
@@ -3360,7 +3360,7 @@ zabbix_export:
           triggers:
             -
               uuid: 5daeca392871438984f90056da6c368d
-              expression: 'last(/Unifi UDM/unifi.udm.inform.url,#1:now-24h)<>last(/Unifi UDM/unifi.udm.inform.url,#1)=0'
+              expression: 'last(/Unifi UDM/unifi.udm.inform.url,#1:now-24h)<>last(/Unifi UDM/unifi.udm.inform.url,#1)=1'
               name: 'Inform Url Changed'
               priority: WARNING
         -
@@ -3522,7 +3522,7 @@ zabbix_export:
           triggers:
             -
               uuid: 080d2e1427d745f093e8d889ebc99409
-              expression: 'last(/Unifi UDM/unifi.udm.network,#1:now-24h)<>last(/Unifi UDM/unifi.udm.network,#1)=0'
+              expression: 'last(/Unifi UDM/unifi.udm.network,#1:now-24h)<>last(/Unifi UDM/unifi.udm.network,#1)=1'
               name: 'Management Network Changed'
               priority: WARNING
         -
@@ -3680,7 +3680,7 @@ zabbix_export:
           triggers:
             -
               uuid: 26f147aa61c5459d8dcbdc45046479eb
-              expression: 'last(/Unifi UDM/unifi.udm.version,#1:now-24h)<>last(/Unifi UDM/unifi.udm.version,#1)=0'
+              expression: 'last(/Unifi UDM/unifi.udm.version,#1:now-24h)<>last(/Unifi UDM/unifi.udm.version,#1)=1'
               name: 'Software Version Changed'
               priority: INFO
       discovery_rules:
@@ -4544,7 +4544,7 @@ zabbix_export:
           triggers:
             -
               uuid: 2f2580a943d2486d9071f7b139a9ad0b
-              expression: 'last(/Unifi USW/unifi.usw.inform.url,#1:now-24h)<>last(/Unifi USW/unifi.usw.inform.url,#1)=0'
+              expression: 'last(/Unifi USW/unifi.usw.inform.url,#1:now-24h)<>last(/Unifi USW/unifi.usw.inform.url,#1)=1'
               name: 'Inform Url Changed'
               priority: WARNING
         -
@@ -4706,7 +4706,7 @@ zabbix_export:
           triggers:
             -
               uuid: 52b3f2fd8f944ecbb5b61573bcc8fa92
-              expression: 'last(/Unifi USW/unifi.usw.network,#1:now-24h)<>last(/Unifi USW/unifi.usw.network,#1)=0'
+              expression: 'last(/Unifi USW/unifi.usw.network,#1:now-24h)<>last(/Unifi USW/unifi.usw.network,#1)=1'
               name: 'Management Network Changed'
               priority: WARNING
         -
@@ -4923,7 +4923,7 @@ zabbix_export:
           triggers:
             -
               uuid: 30bdbfdc446e47679da6154bd2f92439
-              expression: 'last(/Unifi USW/unifi.usw.version,#1:now-24h)<>last(/Unifi USW/unifi.usw.version,#1)=0'
+              expression: 'last(/Unifi USW/unifi.usw.version,#1:now-24h)<>last(/Unifi USW/unifi.usw.version,#1)=1'
               name: 'Software Version Changed'
               priority: INFO
       discovery_rules:
