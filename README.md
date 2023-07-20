@@ -63,6 +63,9 @@ Once you create view only user, on Zabbix create a new host and link ***Unifi Ne
 - ***{$UNIFI.IP}***: IP or FQDN of Unifi Network Web Interface.
 - ***{$UNIFI.USERNAME}***: Username of View Only user.
 - ***{$UNIFI.PASSWORD}***: Password of View Only user.
+- ***{$UNIFI.API.AUTH.URI}***: change to `api/login` if using unifi controller vm
+- ***{$UNIFI.API.AUTH.TOKEN}***: change to `unifises` if using unifi controller vm
+- ***{$UNIFI.API.URI}***: change to `api/s/default/stat` if using unifi controller vm
 
 If you prefer you can modify other macros for further personalize trigger parameters.
 
