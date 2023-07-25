@@ -317,7 +317,7 @@ zabbix_export:
           triggers:
             -
               uuid: 021ff8a030f944fca0df2a9f413d51b8
-              expression: 'last(/Unifi Network/unifi.lan.status,#3)<>"ok"'
+              expression: 'last(/Unifi Network/unifi.lan.status,#3)<>"ok" and last(/Unifi Network/unifi.lan.status,#3)<>"unknown"'
               name: 'Problem on LAN'
               priority: HIGH
         -
@@ -508,7 +508,7 @@ zabbix_export:
           triggers:
             -
               uuid: 9e9cc722c7644f879abb0fd99023e2a7
-              expression: 'last(/Unifi Network/unifi.vpn.status,#3)<>"ok"'
+              expression: 'last(/Unifi Network/unifi.vpn.status,#3)<>"ok" and last(/Unifi Network/unifi.vpn.status,#3)<>"unknown"'
               name: 'Problem on VPN'
               priority: HIGH
         -
@@ -782,7 +782,7 @@ zabbix_export:
           triggers:
             -
               uuid: 086fb12ad42b4fb6859ce34a45858a3e
-              expression: 'last(/Unifi Network/unifi.wan.status,#3)<>"ok"'
+              expression: 'last(/Unifi Network/unifi.wan.status,#3)<>"ok" and last(/Unifi Network/unifi.wan.status,#3)<>"unknown"'
               name: 'Problem on WAN'
               priority: HIGH
         -
@@ -977,7 +977,7 @@ zabbix_export:
           triggers:
             -
               uuid: 54e4cd7e9fed4a4fbcca448fd3db166f
-              expression: 'last(/Unifi Network/unifi.wlan.status,#3)<>"ok"'
+              expression: 'last(/Unifi Network/unifi.wlan.status,#3)<>"ok" and last(/Unifi Network/unifi.wlan.status,#3)<>"unknown"'
               name: 'Problem on WLAN'
               priority: HIGH
       discovery_rules:
