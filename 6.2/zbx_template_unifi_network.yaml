@@ -2829,6 +2829,32 @@ zabbix_export:
               tag: Appliaction
               value: metrics
         -
+          uuid: b2e80e77e4194c70b6bce36272bda380
+          name: 'UAP Uplink Speed'
+          type: DEPENDENT
+          key: unifi.uap.uplink.speed
+          delay: '0'
+          history: 7d
+          trends: '0'
+          units: bps
+          preprocessing:
+            - type: JSONPATH
+              parameters:
+                - '$.data[0].uplink.speed'
+            - type: MULTIPLIER
+              parameters:
+                - '1000000'
+          master_item:
+            key: unifi.uap.device
+          tags:
+            - tag: Application
+              value: metrics
+          triggers:
+            - uuid: c2fba874987848f3bbd1a407a478cc09
+              expression: 'last(/Unifi UAP/unifi.uap.uplink.speed,#1:now-24h)<>last(/Unifi UAP/unifi.uap.uplink.speed,#1)=1'
+              name: 'Uplink Speed Changed'
+              priority: INFO
+        -
           uuid: 367a5272bf6a46c6ab6e31928be77657
           name: 'UAP Uptime'
           type: DEPENDENT
@@ -4868,6 +4894,32 @@ zabbix_export:
             -
               tag: Appliaction
               value: metrics
+        - 
+          uuid: 1946471c78f54a4695317b460084e79f
+          name: 'USW Uplink Speed'
+          type: DEPENDENT
+          key: unifi.usw.uplink.speed
+          delay: '0'
+          history: 7d
+          trends: '0'
+          units: bps
+          preprocessing:
+            - type: JSONPATH
+              parameters:
+                - '$.data[0].uplink.speed'
+            - type: MULTIPLIER
+              parameters:
+                - '1000000'
+          master_item:
+            key: unifi.usw.device
+          tags:
+            - tag: Application
+              value: metrics
+          triggers:
+            - uuid: d879cab0510a463eb3f42673bbd97745
+              expression: 'last(/Unifi USW/unifi.usw.uplink.speed,#1:now-24h)<>last(/Unifi USW/unifi.usw.uplink.speed,#1)=1'
+              name: 'Uplink Speed Changed'
+              priority: INFO
         -
           uuid: b8a393919007480099d2917f4757fd80
           name: 'USW Uplink Type'
