@@ -2851,8 +2851,8 @@ zabbix_export:
               value: metrics
           triggers:
             - uuid: c2fba874987848f3bbd1a407a478cc09
-              expression: 'last(/Unifi UAP/unifi.uap.uplink.speed,#1:now-24h)<>last(/Unifi UAP/unifi.uap.uplink.speed,#1)=1'
-              name: 'Uplink Speed Changed'
+              expression: 'last(/Unifi UAP/unifi.uap.uplink.speed,#1:now-24h)>last(/Unifi UAP/unifi.uap.uplink.speed,#1)=1'
+              name: 'Uplink Speed Changed to Lower Speed'
               priority: INFO
         -
           uuid: 367a5272bf6a46c6ab6e31928be77657
@@ -4937,8 +4937,8 @@ zabbix_export:
               value: metrics
           triggers:
             - uuid: d879cab0510a463eb3f42673bbd97745
-              expression: 'last(/Unifi USW/unifi.usw.uplink.speed,#1:now-24h)<>last(/Unifi USW/unifi.usw.uplink.speed,#1)=1'
-              name: 'Uplink Speed Changed'
+              expression: 'last(/Unifi USW/unifi.usw.uplink.speed,#1:now-24h)>last(/Unifi USW/unifi.usw.uplink.speed,#1)=1'
+              name: 'Uplink Speed Changed to Lower Speed'
               priority: INFO
         -
           uuid: 4b0e3c9d49ac4321856dcd8fcd3f4afd
