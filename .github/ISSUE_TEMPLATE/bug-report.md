@@ -2,7 +2,7 @@
 name: Bug Report
 about: Report Bug
 title: "[BUG] Title"
-labels: bug, enhancement
+labels: bug
 assignees: MassimilianoPasquini97
 
 ---
