@@ -241,12 +241,6 @@ zabbix_export:
             -
               tag: Application
               value: raw
-          triggers:
-            -
-              uuid: 631488ad954b474dbb1ac5f87f2e731e
-              expression: 'last(/Unifi Network/unifi.health,#3)=""'
-              name: 'Unifi API not responding'
-              priority: HIGH
         -
           uuid: 9bc9eb2def2a4bcab5555889b1f3cc03
           name: 'Unifi LAN Client'
