@@ -2330,7 +2330,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -2467,7 +2467,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 36fae4ff63634e1abf8f5609aea7e930
@@ -2487,7 +2487,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -2513,7 +2513,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 7e6609d049dc4f978802ef11d0df1ab1
@@ -2533,7 +2533,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 3d5fdde7c5b3467cab0d8b892289e7ba
@@ -2573,7 +2573,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 4af3c4e027fb4f5f9e44188674c5569a
@@ -2629,7 +2629,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 3965eea5addf431b9f301bdf08f0ea21
@@ -2649,7 +2649,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -2675,7 +2675,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: fc9c8357d22741ac99ad306a13ae7296
@@ -2695,7 +2695,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 8347a611d2854fa1b2e94740cd8a1c59
@@ -2715,7 +2715,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: f9fe51202c5442ad89edc8039419ce6c
@@ -2735,7 +2735,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: efa9f273f6f34229987caba2ee52afeb
@@ -2755,7 +2755,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -2781,7 +2781,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 4c67beb2f7d8417482029c6b747616c3
@@ -2800,7 +2800,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 52163a08e934495992192956e595f997
@@ -2820,7 +2820,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: b2e80e77e4194c70b6bce36272bda380
@@ -2866,7 +2866,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -2892,7 +2892,7 @@ zabbix_export:
             key: unifi.uap.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -3223,7 +3223,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -3361,7 +3361,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: a26ed5dc4ba6483bb5033c7d8d282d62
@@ -3381,7 +3381,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -3407,7 +3407,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 342044c581ee45f7b83af7855d1758d2
@@ -3427,7 +3427,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 8cabcc4d0ed34e0ea6a79425f074643c
@@ -3467,7 +3467,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 7d5dea76e1c0478a8dbac9c31c2569be
@@ -3523,7 +3523,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 8f5f6748fc414c12935fc91fc99b0962
@@ -3543,7 +3543,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -3569,7 +3569,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 1dca3274195046c681a9228ba6687b20
@@ -3589,7 +3589,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: a198e227234b4c81a2dc328775810540
@@ -3609,7 +3609,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: faacb66c78ba405c8762aa58d0c3d1fa
@@ -3629,7 +3629,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 31042447a18e4f5692a14c4d492d641a
@@ -3649,7 +3649,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -3675,7 +3675,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -3701,7 +3701,7 @@ zabbix_export:
             key: unifi.udm.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -4415,7 +4415,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -4553,7 +4553,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 70e405340adf40dd813a9c93dd8c11be
@@ -4573,7 +4573,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -4599,7 +4599,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: c87a057c7ada4156bbb2079bbc1d566e
@@ -4619,7 +4619,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: fe729c2805d24f5d90d82898be3f2c75
@@ -4659,7 +4659,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: c3ec97fcb610455a9ff2761ac04e74df
@@ -4715,7 +4715,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 921f0a51346a40abba70938f1dfcf679
@@ -4735,7 +4735,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -4761,7 +4761,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: d4ff96b87a514acc9191c4ff6fee3f65
@@ -4781,7 +4781,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: f5c0a882c062405581ca260db1105a7f
@@ -4801,7 +4801,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 52fbddcb32dc42d1adcccc9cec592d64
@@ -4821,7 +4821,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: 42907d1baeee4562883adedeb4824cbd
@@ -4841,7 +4841,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -4867,7 +4867,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: df89a8e3da004ea59cc244eaa351a66c
@@ -4886,7 +4886,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         -
           uuid: b8a393919007480099d2917f4757fd80
@@ -4906,7 +4906,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
         - 
           uuid: 1946471c78f54a4695317b460084e79f
@@ -4952,7 +4952,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
@@ -4978,7 +4978,7 @@ zabbix_export:
             key: unifi.usw.device
           tags:
             -
-              tag: Appliaction
+              tag: Application
               value: metrics
           triggers:
             -
