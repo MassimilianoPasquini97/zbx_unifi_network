@@ -1445,6 +1445,19 @@ zabbix_export:
               type: JSONPATH
               parameters:
                 - $.data
+            - 
+              type: JAVASCRIPT
+              parameters:
+                - |
+                  if (value) {
+                    var json = JSON.parse(value);
+                    if (json && json.length > 0) {
+                      for (i = 0; i < json.length; i++) {
+                        if (!json[i].name) json[i].name = json[i].hostname;
+                      }
+                      return JSON.stringify(json);
+                    }
+                  }
         -
           uuid: 2641227a01cc4265a5be5e0f0a84211d
           name: 'Client Wireless'
@@ -2032,6 +2045,19 @@ zabbix_export:
               type: JSONPATH
               parameters:
                 - $.data
+            - 
+              type: JAVASCRIPT
+              parameters:
+                - |
+                  if (value) {
+                    var json = JSON.parse(value);
+                    if (json && json.length > 0) {
+                      for (i = 0; i < json.length; i++) {
+                        if (!json[i].name) json[i].name = json[i].hostname;
+                      }
+                      return JSON.stringify(json);
+                    }
+                  }
         -
           uuid: 207a7dd740fb47338976131d64e14902
           name: 'Device UAP'
