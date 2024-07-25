@@ -1,12 +1,15 @@
 zabbix_export:
   version: '6.0'
   groups:
-    - uuid: 36bff6c29af64692839d077febfc7079
+    -
+      uuid: 36bff6c29af64692839d077febfc7079
       name: 'Templates/Network devices'
-    - uuid: c066ade8616c43d9acfac81bd1ef6a63
+    -
+      uuid: c066ade8616c43d9acfac81bd1ef6a63
       name: Network
   templates:
-    - uuid: 7db7c68fd7114232a2a5c5eb4e84d94f
+    -
+      uuid: 7db7c68fd7114232a2a5c5eb4e84d94f
       template: 'Unifi Network'
       name: 'Unifi Network'
       description: |
