@@ -1229,13 +1229,13 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: 9eb8c0adbc3441189904567ba325cc82
-              name: '{#NAME} Wired Switch Port Total rx Retries'
+              name: '{#NAME} Wired Switch Port rx Rate'
               type: DEPENDENT
               key: 'unifi.client.wired.sw.port.rx.bytes.r[{#MAC}]'
               delay: '0'
               history: 7d
               trends: 90d
-              units: B
+              units: Bps
               preprocessing:
                 -
                   type: JSONPATH
@@ -1269,7 +1269,7 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: 0bb4370155fd4a688f7314c1d6a165f3
-              name: '{#NAME} Wired Switch Port Total rx'
+              name: '{#NAME} Wired Switch Port Total rx Packets'
               type: DEPENDENT
               key: 'unifi.client.wired.sw.port.rx.packets[{#MAC}]'
               delay: '0'
@@ -1309,13 +1309,13 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: b761a6ee8f3d418b9c179a4a836b8cbe
-              name: '{#NAME} Wired Switch Port Total tx Retries'
+              name: '{#NAME} Wired Switch Port tx Rate'
               type: DEPENDENT
               key: 'unifi.client.wired.sw.port.tx.bytes.r[{#MAC}]'
               delay: '0'
               history: 7d
               trends: 90d
-              units: B
+              units: Bps
               preprocessing:
                 -
                   type: JSONPATH
@@ -1349,7 +1349,7 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: c56efa9ccc5a40698d9a3f715d60a0fd
-              name: '{#NAME} Wired Switch Port Total tx'
+              name: '{#NAME} Wired Switch Port Total tx Packets'
               type: DEPENDENT
               key: 'unifi.client.wired.sw.port.tx.packets[{#MAC}]'
               delay: '0'
@@ -1771,13 +1771,13 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: 3586fae8be4641dba1ef6ebb54df8e24
-              name: '{#NAME} Wireless Total rx Retries'
+              name: '{#NAME} Wireless rx Rate'
               type: DEPENDENT
               key: 'unifi.client.wireless.rx.bytes.r[{#MAC}]'
               delay: '0'
               history: 7d
               trends: 90d
-              units: B
+              units: Bps
               preprocessing:
                 -
                   type: JSONPATH
@@ -1811,7 +1811,7 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: d94b743fc4dd46d98a0978e6af03d5d6
-              name: '{#NAME} Wireless Total rx'
+              name: '{#NAME} Wireless Total rx Packets'
               type: DEPENDENT
               key: 'unifi.client.wireless.rx.packets[{#MAC}]'
               delay: '0'
@@ -1910,13 +1910,13 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: a2727644922f4c388ca6de96f7dcc481
-              name: '{#NAME} Wireless Total tx Retries'
+              name: '{#NAME} Wireless tx Rete'
               type: DEPENDENT
               key: 'unifi.client.wireless.tx.bytes.r[{#MAC}]'
               delay: '0'
               history: 7d
               trends: 90d
-              units: B
+              units: Bps
               preprocessing:
                 -
                   type: JSONPATH
@@ -1950,7 +1950,7 @@ zabbix_export:
                 key: unifi.client
             -
               uuid: ebfa2bc0ef8446eb92a0de3f24a6ff88
-              name: '{#NAME} Wireless Total tx'
+              name: '{#NAME} Wireless Total tx Packets'
               type: DEPENDENT
               key: 'unifi.client.wireless.tx.packets[{#MAC}]'
               delay: '0'

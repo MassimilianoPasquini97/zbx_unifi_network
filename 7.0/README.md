@@ -94,11 +94,11 @@ If you done all right now it auto discover all Unifi Dream Machine, Unifi Switch
 | *API stat/sta*: {#NAME} Wired Switch Port Macaddress       | Client switch macaddress port | `Dependent item` | unifi.client.wired.sw.port.mac[{#MAC}]           |
 | *API stat/sta*: {#NAME} Wired Switch Port Speed            | Client switch port speed      | `Dependent item` | unifi.client.wired.sw.port.speed[{#MAC}]         |
 | *API stat/sta*: {#NAME} Wired Switch Port Total rx         | Client total rx byte          | `Dependent item` | unifi.client.wired.sw.port.rx.bytes[{#MAC}]      |
-| *API stat/sta*: {#NAME} Wired Switch Port Total rx         | Client total rx packets       | `Dependent item` | unifi.client.wired.sw.port.rx.packets[{#MAC}]    |
-| *API stat/sta*: {#NAME} Wired Switch Port Total rx Retries | Client total rx retries byte  | `Dependent item` | unifi.client.wired.sw.port.rx.bytes.r[{#MAC}]    |
+| *API stat/sta*: {#NAME} Wired Switch Port Total rx Packets | Client total rx packets       | `Dependent item` | unifi.client.wired.sw.port.rx.packets[{#MAC}]    |
+| *API stat/sta*: {#NAME} Wired Switch Port rx Rate          | Client rx rate byte/seconds   | `Dependent item` | unifi.client.wired.sw.port.rx.bytes.r[{#MAC}]    |
 | *API stat/sta*: {#NAME} Wired Switch Port Total tx         | Client total tx byte          | `Dependent item` | unifi.client.wired.sw.port.tx.bytes[{#MAC}]      |
-| *API stat/sta*: {#NAME} Wired Switch Port Total tx         | Client total tx packets       | `Dependent item` | unifi.client.wired.sw.port.tx.packets[{#MAC}]    |
-| *API stat/sta*: {#NAME} Wired Switch Port Total tx Retries | Client total tx retries byte  | `Dependent item` | unifi.client.wired.sw.port.tx.bytes.r[{#MAC}]    |
+| *API stat/sta*: {#NAME} Wired Switch Port Total tx Packets | Client total tx packets       | `Dependent item` | unifi.client.wired.sw.port.tx.packets[{#MAC}]    |
+| *API stat/sta*: {#NAME} Wired Switch Port tx Rate          | Client tx rate byte/seconds   | `Dependent item` | unifi.client.wired.sw.port.tx.bytes.r[{#MAC}]    |
 | *API stat/sta*: {#NAME} DNS Record                         | Client dns record             | `Dependent item` | unifi.client.wireless.dns.record[{#MAC}]         |
 | *API stat/sta*: {#NAME} DNS Record Enabled                 | Client dns record enabled     | `Dependent item` | unifi.client.wireless.dns.record.enabled[{#MAC}] |
 | *API stat/sta*: {#NAME} First Seen                         | Client first seen date        | `Dependent item` | unifi.client.wireless.seen.first[{#MAC}]         |
@@ -119,12 +119,11 @@ If you done all right now it auto discover all Unifi Dream Machine, Unifi Switch
 | *API stat/sta*: {#NAME} Wireless Noise                     | Client noise                  | `Dependent item` | unifi.client.wireless.ap.noise[{#MAC}]           |
 | *API stat/sta*: {#NAME} Wireless powersave                 | Client is in powersave        | `Dependent item` | unifi.client.wireless.ap.powersave[{#MAC}]       |
 | *API stat/sta*: {#NAME} Wireless Total rx                  | Client total rx byte          | `Dependent item` | unifi.client.wireless.rx.bytes[{#MAC}]           |
-| *API stat/sta*: {#NAME} Wireless Total rx                  | Client total rx packets       | `Dependent item` | unifi.client.wireless.rx.packets[{#MAC}]         |
-| *API stat/sta*: {#NAME} Wireless Total rx Retries          | Client total rx retries byte  | `Dependent item` | unifi.client.wireless.rx.bytes.r[{#MAC}]         |
+| *API stat/sta*: {#NAME} Wireless Total rx Packets          | Client total rx packets       | `Dependent item` | unifi.client.wireless.rx.packets[{#MAC}]         |
+| *API stat/sta*: {#NAME} Wireless rx Rate                   | Client rx rate byte/seconds   | `Dependent item` | unifi.client.wireless.rx.bytes.r[{#MAC}]         |
 | *API stat/sta*: {#NAME} Wireless Total tx                  | Client total tx byte          | `Dependent item` | unifi.client.wireless.tx.bytes[{#MAC}]           |
-| *API stat/sta*: {#NAME} Wireless Total tx                  | Client total tx packets       | `Dependent item` | unifi.client.wireless.tx.packets[{#MAC}]         |
-| *API stat/sta*: {#NAME} Wireless Total tx Retries          | Client total tx retries byte  | `Dependent item` | unifi.client.wireless.tx.bytes.r[{#MAC}]         |
-| *API stat/sta*: {#NAME} Wireless tx rate                   | Client tx rate                | `Dependent item` | unifi.client.wireless.tx.bytes.r[{#MAC}]         |
+| *API stat/sta*: {#NAME} Wireless Total tx Packets          | Client total tx packets       | `Dependent item` | unifi.client.wireless.tx.packets[{#MAC}]         |
+| *API stat/sta*: {#NAME} Wireless tx Rate                   | Client tx rate byte/seconds   | `Dependent item` | unifi.client.wireless.tx.bytes.r[{#MAC}]         |
 
 ## Unifi Network: Host prototypes
 
