@@ -71,6 +71,10 @@ If you prefer you can modify other macros for further personalize trigger parame
 
 If you done all right now it auto discover all Unifi Dream Machine, Unifi Switch and Unifi Access Point and create an host object for all of them.
 
+### Monitoring multiple sites
+
+By default, this template is configured for monitoring the `default` site. If you want to monitor a different site, swap `default` with the site ID from the `{$UNIFI.API.URI}` macro. To monitor multiple sites, create separate Zabbix hosts each with a distinct `{$UNIFI.API.URI}` macro value. Finding the site ID is straightforward, access your Unifi console in a browser, navigate to the site you want to monitor, and look for the site ID on the URL.
+
 ## Contribute
 
 This template is on early stage and can bee improved supporting other Unifi devices. Feel free to fork and submit pull request. 🙏🏻
