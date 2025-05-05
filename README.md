@@ -1,9 +1,9 @@
 <p align="center">
-    <img src="docs/image/logo.webp" height="128">
-    <h1 align="center">Unifi Network Zabbix Template</h1>
+    <img src="docs/image/logo.webp" height="128" alt="Unifi Network Zabbix Template">
 </p>
+<h1 align="center">Unifi Network Zabbix Template</h1>
 
-This template is meant for monitoring Unifi network devices using Unifi Network API. Special thanks who wrote and maintain this [wiki page](https://ubntwiki.com/products/software/unifi-controller/api), this guide helped me for realizing this template.
+This template is designed to monitor Unifi network devices using Unifi Network API.  A special thanks those who created and maintain this [wiki page](https://ubntwiki.com/products/software/unifi-controller/api).  This guide helped me create this template.
 
 - [Supported Unifi Devices](#supported-unifi-devices)
 - [Features](#features)
@@ -16,8 +16,9 @@ This template is meant for monitoring Unifi network devices using Unifi Network 
 | Type | Description         |
 | ---- | ------------------- |
 | udm  | Unifi Dream Machine |
+| uxg  | UXG Gateway         |
 | usw  | Unifi Switch        |
-| uap  | Unifi Acccess Point |
+| uap  | Unifi Access Point |
 
 ## Features
 
@@ -25,24 +26,32 @@ General:
 
 - Unifi Controller CPU usage.
 - Unifi Controller Memory usage.
-- Unifi Active, Disabled, Disconnected and Pending Switch and Access Point.
-- Unifi Controller LAN, WLAN, VPN and GUEST online client counter.
+- Unifi device status (Active, Disabled, Disconnected and Pending Adoption) for Switches and Access Points.
+- Unifi Controller LAN, WLAN, VPN, and GUEST online client counters.
 - Unifi Controller WAN metrics.
-- Advanced metrics for all active client on WLAN and LAN.
+- Advanced metrics for all active LAN and WLAN clients.
 
 UDM:
 
 - CPU usage.
 - Memory usage.
 - Temperature sensors.
-- Metrics for al ports.
+- Metrics for all ports.
+- Other metrics.
+
+UXG:
+
+- CPU usage.
+- Memory usage.
+- Temperature sensors.
+- Metrics for all ports.
 - Other metrics.
 
 USW:
 
 - CPU usage.
 - Memory usage.
-- Metrics for al ports.
+- Metrics for all ports.
 - Other metrics.
 
 UAP:
@@ -54,30 +63,36 @@ UAP:
 
 ## How to use
 
-First of all you need to import the template file ***zbx_template_unifi_network.yaml*** in Zabbix. 😅
+1. Create a local user with *view only* permission on the Unifi Controller using the Unifi Controller web interface.  Zabbix will use this user to access the Unifi Network API.
 
-Said that, this template use Unifi Network API so it need a view only local user on Unifi Network Web Interface.
+2. Import the template file ***zbx_template_unifi_network.yaml*** into Zabbix.
 
-Once you create view only user, on Zabbix create a new host and link ***Unifi Network*** template, those macros need to be configured:
+3. Create a new host in Zabbix and link the ***Unifi Network*** template.  
 
-- ***{$UNIFI.IP}***: IP or FQDN of Unifi Network Web Interface.
-- ***{$UNIFI.USERNAME}***: Username of View Only user.
-- ***{$UNIFI.PASSWORD}***: Password of View Only user.
-- ***{$UNIFI.API.AUTH.URI}***: change to `api/login` if using unifi controller vm
-- ***{$UNIFI.API.AUTH.TOKEN}***: change to `unifises` if using unifi controller vm
-- ***{$UNIFI.API.URI}***: change to `api/s/default/stat` if using unifi controller vm
+4. Configure these macros:
 
-If you prefer you can modify other macros for further personalize trigger parameters.
+    - ***{$UNIFI.IP}***: IP or FQDN of Unifi Controller web interface.
+    - ***{$UNIFI.USERNAME}***: Username of View Only user.
+    - ***{$UNIFI.PASSWORD}***: Password of View Only user.
+    - ***{$UNIFI.API.AUTH.URI}***: change to `api/login` if using the Unifi Controller application & not a Unifi Dream Machine.
+    - ***{$UNIFI.API.AUTH.TOKEN}***: change to `unifises` if using the Unifi Controller application & not a Unifi Dream Machine.
+    - ***{$UNIFI.API.URI}***: change to `api/s/default/stat` if using the Unifi Controller application & not a Unifi Dream Machine.
 
-If you done all right now it auto discover all Unifi Dream Machine, Unifi Switch and Unifi Access Point and create an host object for all of them.
+    *Other macros included in the template may be edited to customize trigger parameters.*
+
+    If you've done everything right, Zabbix will auto discover Unifi Dream Machines, UXG Gateways, Unifi Switches, and Unifi Access Points and create an host object for each.
+
+### Changing the Unifi site ID
+
+By default, the template is configured to monitor the `default` Unifi site. If you want to monitor a different site, change `default` to the site ID in the `{$UNIFI.API.URI}` macro. The site ID can be found in the URL used to access the Unifi Controller web interface.
 
 ### Monitoring multiple sites
 
-By default, this template is configured for monitoring the `default` site. If you want to monitor a different site, swap `default` with the site ID from the `{$UNIFI.API.URI}` macro. To monitor multiple sites, create separate Zabbix hosts each with a distinct `{$UNIFI.API.URI}` macro value. Finding the site ID is straightforward, access your Unifi console in a browser, navigate to the site you want to monitor, and look for the site ID on the URL.
+To monitor multiple sites, create separate Zabbix hosts, each with a distinct `{$UNIFI.API.URI}` macro value.
 
 ## Contribute
 
-This template is on early stage and can bee improved supporting other Unifi devices. Feel free to fork and submit pull request. 🙏🏻
+This template is in an early stage and can be improved to support other Unifi devices. Feel free to fork and submit pull request. 🙏🏻
 
 ## License
 

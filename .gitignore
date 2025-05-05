@@ -3,3 +3,6 @@
 
 # docker
 docker-compose-*.yml
+
+# vscode
+.vscode/
