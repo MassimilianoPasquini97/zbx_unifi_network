@@ -3,6 +3,9 @@
     <h1 align="center">Unifi Network Zabbix Template</h1>
 </p>
 
+> [!CAUTION]
+> A new version that use official UniFi Network Official API is available at the [MassimilianoPasquini97/zbx_unifi_network_api](https://github.com/MassimilianoPasquini97/zbx_unifi_network_api) repository.
+
 This template is meant for monitoring Unifi network devices using Unifi Network API. Special thanks who wrote and maintain this [wiki page](https://ubntwiki.com/products/software/unifi-controller/api), this guide helped me for realizing this template.
 
 - [Supported Unifi Devices](#supported-unifi-devices)
